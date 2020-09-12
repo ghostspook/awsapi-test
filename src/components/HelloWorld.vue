@@ -29,6 +29,10 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
+    <h3>AWS API Gateway Test</h3>
+    <ul>
+      <li><a href="#" @click="navigateToApiTest" rel="noopener">Click to test</a></li>
+    </ul>
   </div>
 </template>
 
@@ -37,6 +41,11 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  methods: {
+    navigateToApiTest() {
+      this.$router.push({ name: 'ApiTest'})
+    }
   }
 }
 </script>
