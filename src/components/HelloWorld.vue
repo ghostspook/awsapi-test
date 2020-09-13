@@ -31,7 +31,7 @@
     </ul>
     <h3>AWS API Gateway Test</h3>
     <ul>
-      <li><a href="#" @click="navigateToApiTest" rel="noopener">Click to test</a></li>
+      <li><router-link to="/apitest">Api Test</router-link></li>
     </ul>
   </div>
 </template>
@@ -41,11 +41,6 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
-  },
-  methods: {
-    navigateToApiTest() {
-      this.$router.push({ name: 'ApiTest'})
-    }
   }
 }
 </script>

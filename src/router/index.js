@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import ApiTest from '../views/ApiTest.vue'
 
 Vue.use(VueRouter)
 
@@ -21,7 +22,7 @@ const routes = [
   {
     path: '/apitest',
     name: 'ApiTest',
-    component: () => import(/* webpackChunkName: "apitest" */ '../views/ApiTest.vue')
+    component: ApiTest
   }
 ]
 
